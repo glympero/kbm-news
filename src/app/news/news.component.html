@@ -1,0 +1,8 @@
+<section class="news-container">
+  <app-news-search></app-news-search>
+  <div class="multi-box-wrapper">
+    <section class="multi-box-columns">
+      <app-news-item class="multi-box-column" *ngFor="let new of news" [newsItem]="new"></app-news-item>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+img {
+  width: 100%;
+}
+
+.light {
+  color: lightgrey;
+}
+
+.right-padding {
+  padding-right: 10px;
+}

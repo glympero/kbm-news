@@ -1,0 +1,22 @@
+<div class="container ">
+  <section class="news-filters-section">
+    <div class="row">
+      <div class="col-xs-12 col-sm-7  col-sm-offset-5">
+        <div class="news-filters">
+          <div class="form-group has-feedback has-feedback-left">
+            <input type="text" class="form-control" placeholder="Search Channels" [(ngModel)]="filteredNews">
+            <i class="glyphicon glyphicon-search form-control-feedback "></i>
+          </div>
+          <div class="form-group">
+            <select class="form-control" (change)="filterForeCasts($event)">
+              <option class="dropdown-item" *ngFor="let category of categories" value={{category}}>
+                {{category}}
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
